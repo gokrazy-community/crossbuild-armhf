@@ -6,6 +6,9 @@ RUN apt-get update && \
     apt-get install -y  git bc bison flex libssl-dev make libc6-dev libncurses5-dev \
                         crossbuild-essential-armhf
 
+# to compile go programs
+RUN apt-get -y install golang-go
+
 ENV KERNEL kernel
 ENV ARCH arm
 ENV CROSS_COMPILE arm-linux-gnueabihf-
