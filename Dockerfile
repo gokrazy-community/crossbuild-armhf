@@ -7,7 +7,7 @@ RUN apt-get update && \
                         crossbuild-essential-armhf
 
 # to compile go programs
-RUN apt-get -y install golang-go
+RUN apt-get -y install golang-go gcc-arm-linux-gnueabi
 
 ENV KERNEL kernel
 ENV ARCH arm
