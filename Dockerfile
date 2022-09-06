@@ -3,7 +3,7 @@ FROM ubuntu:jammy-20220815
 # according to https://www.raspberrypi.com/documentation/computers/linux_kernel.html#cross-compiling-the-kernel
 RUN apt-get update && \
     apt-get install -y  git bc bison flex libssl-dev make libc6-dev libncurses5-dev \
-                        crossbuild-essential-armhf
+                        crossbuild-essential-armhf kmod
 
 # to compile go programs
 RUN apt-get -y install golang-go gcc-arm-linux-gnueabi
