@@ -1,5 +1,4 @@
-# impish is needed since glibc 2.34 is required for linux 5.15.30
-FROM ubuntu:impish-20220316
+FROM ubuntu:jammy-20220815
 
 # according to https://www.raspberrypi.com/documentation/computers/linux_kernel.html#cross-compiling-the-kernel
 RUN apt-get update && \
