@@ -5,6 +5,6 @@ This repository hosts a docker container for cross-compiling the 32 bits Linux b
 ```
 docker run --rm \
     -v /path/to/the/kernel:/root/armhr \
-    ghcr.io/gokrazy-community/crossbuild-armhf:impish-20220316 \
+    ghcr.io/gokrazy-community/crossbuild-armhf:jammy-20220815 \
     make zImage
 ```
