@@ -7,9 +7,9 @@ RUN apt-get update && \
                         crossbuild-essential-armhf kmod
 
 
-ENV KERNEL kernel
-ENV ARCH arm
-ENV CROSS_COMPILE arm-linux-gnueabihf-
+ENV KERNEL=kernel
+ENV ARCH=arm
+ENV CROSS_COMPILE=arm-linux-gnueabihf-
 
 WORKDIR /root/armhf
 
